@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.f {
+    display: flex;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.register-block {
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 40px 0;
+    position: relative;
+}
+
+.register-title {
+    
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.red-curcle {
+    width: 120%;
+    height: 520px;
+    z-index: -1;
+    border-radius: 50%;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: red;
+}
+
+.btn {
+    max-width: 200px;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin-bottom: 70px;
+    font-weight: 600;
+    background: #ffffff00;
+    color: #fff;
+    font-size: 16px;
+    border: 3px solid #1400bb;
+}
+
+.input {
+    color: #ccc;
+    cursor: pointer;
+    background: #ffffff00;
+    border: 0px solid;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin: 30px 0;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.radio {
+    color: #fff;
+    margin: 30px 0;
+    padding-right: 40px;
+}
+
+.radio div {
+    cursor: pointer;
+}
+
+.radio input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.radio-title {
+    color: #eaeaea;
+}
+
+.wrapper {
+    background: #00b1f5;
+    overflow-x: hidden;
+    position: relative;
+    left:20%;
+    min-height: 979px;
+    width: 60%;
+}
+
+.wrapper-inputs {
+    padding: 0 35px;
+    z-index: 2;
+}
+
+.ai {
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background: red;
+    width: 100%;
+    padding: 20px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.bold {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+    </style>
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="wrapper f f-col">
+      <div class="register-block">
+        <div class="red-curcle"></div>
+        <div class="register-title">Register</div>
+        <div class="">Please fill your information in this form</div>
+      </div>
+
+      <div class="f f-col wrapper-inputs">
+        <input type="text" class="input" placeholder="Name" >
+        <input type="text" class="input" placeholder="Email" >
+        <div class="f ai jcsb radio">
+          <div class="radio-title">Gender</div>
+          <div class="f ai">
+            <input type="radio" name="one" value="male" id="" >
+            <div class="">Male</div>
+          </div>
+          <div class="f ai">
+            <input type="radio" value=" female" name="one" id="" >
+            <div class="">Female</div>
+          </div>
+        </div>
+        <div class="f ai jcsb radio">
+          <div class="radio-title">Account Type</div>
+          <div class="f ai">
+            <input type="radio" name="two" value="free" id="" >
+            <div class="">Free</div>
+          </div>
+          <div class="f ai">
+            <input type="radio" name="two" value = "pro" id="" >
+            <div class="">Pro</div>
+          </div>
+        </div>
+        <input type="text" class="input" placeholder="Username" >
+        <input type="text" class="input" placeholder="Zip Code" >
+        <input type="text" class="input" placeholder="Phone" >
+        <button class="btn" type="button">Submit</button>
+      </div>
+      <div class=" footer">
+        <div class="footer-text f">
+          <div class="">Already have an account?&nbsp;</div>
+          <div class="bold">Login</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reg">
+  </div>
+    <script src="./code.js"></script>
+  </body>
+</html>
